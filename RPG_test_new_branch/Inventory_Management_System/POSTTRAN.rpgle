@@ -33,7 +33,6 @@ D QTY           S              9  0
 /END-FREE
  
 C*******************************************************
-C* $INIT Clear variables
 C*******************************************************
 C     $INIT         BEGSR
 C                   Z-ADD0        TRNID
@@ -44,17 +43,16 @@ C                   Z-ADD0        QTY
 C                   ENDSR
  
 C*******************************************************
-C* $POST  Perform Posting
 C*******************************************************
 C     $POST         BEGSR
  
-C* Write Transaction Header
+
 C                   MOVELTRNTYPE   TRNTYPE
  
-C* Write Transaction Detail
+
 C                   MOVELQTY       QTY
  
-C* Process Item Master Quantity
+
 C                   CHAIN ITEMID     ITEMREC
 C                   IF %FOUND(ITEMS)
 C                   SELECT
