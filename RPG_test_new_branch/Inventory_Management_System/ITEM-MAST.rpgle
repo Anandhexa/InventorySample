@@ -36,7 +36,6 @@ D QTYONHAND     S              9  0
  /END-FREE
 
 C*******************************************************
-C* $INIT Clear screen
 C*******************************************************
 C     $INITMAST         BEGSR
 C                   Z-ADD0         ITEMID
@@ -47,7 +46,6 @@ C                   Z-ADD0         QTYONHAND
 C                   ENDSR
 
 C*******************************************************
-C* $LOAD Load existing item
 C*******************************************************
 C     $LOADMAST         BEGSR
 C                   CHAIN ITEMID   ITEMREC
@@ -60,7 +58,6 @@ C                   ENDIF
 C                   ENDSR
 
 C*******************************************************
-C* $ADD new record
 C*******************************************************
 C     $ADDMAST          BEGSR
 C                   MOVELITEMNAME   ITEMNAME
@@ -70,7 +67,6 @@ C                   MOVELQTYONHAND  QTYONHAND
 C                   ENDSR
 
 C*******************************************************
-C* $CHG Update record
 C*******************************************************
 C     $CHGMAST          BEGSR
 C                   CHAIN ITEMID     ITEMREC
@@ -83,7 +79,6 @@ C                   ENDIF
 C                   ENDSR
 
 C*******************************************************
-C* $DEL Delete record
 C*******************************************************
 C     $DELMAST          BEGSR
 C                   CHAIN ITEMID     ITEMREC
