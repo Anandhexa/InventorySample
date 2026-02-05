@@ -1,0 +1,10 @@
+A          R CUSTREC                   TEXT('Customer Master Record')
+ 
+A            CUSTID        5P 0        TEXT('Customer ID')
+A            CUSTNAME     30A          TEXT('Customer Name')
+A            CUSTADDR     50A          TEXT('Customer Address')
+ 
+A            CUSTPHONE    15A          TEXT('Customer Phone Number')
+A            CUSTEMAIL    40A          TEXT('Customer Email Address')
+ 
+A          K CUSTID

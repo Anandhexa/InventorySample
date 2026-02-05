@@ -1,0 +1,8 @@
+A          R STOCKREC                  TEXT('Stock by Location PF')
+
+A            LOC        3A            TEXT('Location Code')
+A            ITEMID     5P 0           TEXT('Item ID')
+A            QTY        9S 0           TEXT('Quantity on Hand')
+
+A          K LOC
+A          K ITEMID
