@@ -33,7 +33,6 @@ D QTY           S              9  0
 /END-FREE
  
 C*******************************************************
-C* $INIT Clear variables
 C*******************************************************
 C     $INITSTOCK         BEGSR
 C                   Z-ADD0        ITEMID
@@ -42,7 +41,6 @@ C                   Z-ADD0        QTY
 C                   ENDSR
  
 C*******************************************************
-C* $LOAD Load existing item/location
 C*******************************************************
 C     $LOADSTOCK         BEGSR
 C                   IF %FOUND(STKLOC)
@@ -51,14 +49,12 @@ C                   ENDIF
 C                   ENDSR
  
 C*******************************************************
-C* $ADD Add New Stock Record
 C*******************************************************
 C     $ADDSTOCK          BEGSR
 C                   MOVELQTY          QTY
 C                   ENDSR
  
 C*******************************************************
-C* $CHG Update Existing Stock
 C*******************************************************
 C     $CHGSTOCK          BEGSR
 C                   IF %FOUND
@@ -68,7 +64,6 @@ C                   ENDIF
 C                   ENDSR
  
 C*******************************************************
-C* $DEL Delete Stock Record
 C*******************************************************
 C     $DELSTOCK          BEGSR
 C                   IF %FOUND
